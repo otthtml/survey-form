@@ -13,9 +13,9 @@
     justify-content: center;
 }
 
-input[type="checkbox"], input[type="radio"] {
+/* input[type="checkbox"], input[type="radio"] {
 
-}
+} */
 
 input[type="text"], textarea, input[type="email"] {
     background-color: var(--pc);
