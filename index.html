@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <div class="center">
+        <h1 id="title">
+            La Brownie
+        </h1>
+        <p id="description">
+            Peça o seu brownie na La Brownie
+        </p>
+    </div>
+ 
+    <form action="" id="survey-form">
+        <div class="center">
+            <label for="name" id="name-label">Nome</label>
+            <input type="text" name="name" id="name" required placeholder="Insira seu nome">
+    
+            <label for="email" id="email-label">E-mail</label>
+            <input type="email"name="email" id="email" required placeholder="Insira seu email">
+    
+            <label for="number" id="number-label" class="hide">Seu número</label>
+            
+            <div class="hide">
+                <input type="number" name="number" id="number" min="1" max="5" placeholder="Insira o seu número">    
+                <select name="dropdown" id="dropdown">
+                    <option value="0">Mini Brownie</option>
+                    <option value="1">Mini Brownie</option>
+                    <option value="2">Brownie Normal</option>
+                </select>    
+            </div>
+    
+            <p>
+                <input type="radio" name="entrega" id="retirada" value="0"><label for="retirada">Retirada</label>
+                <input type="radio" name="entrega" id="entrega" value="1"><label for="entrega">Entrega</label>                
+            </p>
+    
+            <label id="menu-label">Menu</label>
+            <p>
+                <input type="checkbox" name="mini" id="mini" value="0"><label for="mini">Mini Brownie</label>
+                <input type="checkbox" name="normal" id="normal" value="1"><label for="normal">Brownie Normal</label>                
+            </p>
+
+            <textarea name="observacoes" id="observacoes"></textarea>
+            
+            <button id="submit">Enviar</button>
+
+        </div>   
+
+    </form>
+    <script src="./scripts.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
